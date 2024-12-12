@@ -1,132 +1,242 @@
 
-Chronos: Learning the Language of Time Series | 12 Mar 2024 | https://arxiv.org/abs/2403.07815| 
-MoirAi Uni2TS: Unified Training of Universal Time Series Forecasting Transformers | 4 Feb 2024 | https://arxiv.org/abs/2402.02592 | https://github.com/SalesforceAIResearch/uni2ts
-Tiny Time Mixers (TTMs): Fast Pre-trained Models for Enhanced Zero/Few-Shot Forecasting of Multivariate Time Series | 8 Jan 2024 | https://arxiv.org/abs/2401.03955 |  https://github.com/ibm-granite/granite-tsfm/tree/main/tsfm_public/models/tinytimemixer
 
-D-PAD: Deep-Shallow Multi-Frequency Patterns Disentangling for Time Series Forecasting | 26 Mar 2024 | | 
-TimeCMA: Towards LLM-Empowered Time Series Forecasting via Cross-Modality Alignment | 3 Jun 2024 | | 
-AutoTimes: Autoregressive Time Series Forecasters via Large Language Models | 4 Feb 2024 | | 
-UniTS-ST: A Unified Multi-Task Time Series Model | 01 Jan 2024 | | 
-ROSE: Register Assisted General Time Series Forecasting with Decomposed Frequency Learning | 01 Jan 2024 | | 
-ConvTimeNet: A Deep Hierarchical Fully Convolutional Model for Multivariate Time Series Analysis | 01 Jan 2024 | | 
-MOIRAISmall: Unified Training of Universal Time Series Forecasting Transformers | 01 Jan 2024 | | 
-Fredformer: Frequency Debiased Transformer for Time Series Forecasting | 01 Jan 2024 | | 
-AMD: Adaptive Multi-Scale Decomposition Framework for Time Series Forecasting | 01 Jan 2024 | | 
-CATS: Enhancing Multivariate Time Series Forecasting by Constructing Auxiliary Time Series as Exogenous Variables | 01 Jan 2024 | | 
-HiMTM: Hierarchical Multi-Scale Masked Time Series Modeling for Long-Term Forecasting | 01 Jan 2024 | | 
-GTT-Large: Only the Curve Shape Matters: Training Foundation Models for Zero-Shot Multivariate Time Series Forecasting through Next Curve Shape Prediction | 01 Jan 2024 | | 
-SAMformer: Unlocking the Potential of Transformers in Time Series Forecasting with Sharpness-Aware Minimization and Channel-Wise Attention | 01 Jan 2024 | | 
-LTBoost: Boosted Hybrids of Ensemble Linear and Gradient Algorithms for the Long-term Time Series Forecasting | 01 Jan 2024 | | 
-DiPE-Linear: Disentangled Interpretable Representation for Efficient Long-term Time Series Forecasting | 01 Jan 2024 | | 
-PRformer: Pyramidal Recurrent Transformer for Multivariate Time Series Forecasting | 01 Jan 2024 | | 
+Disentangled Interpretable Representation for Efficient Long-term Time Series Forecasting | 26 Nov 2024 | https://arxiv.org/abs/2411.17257 | https://github.com/wintertee/dipe-linear
+Rethinking the Power of Timestamps for Robust Time Series Forecasting: A Global-Local Fusion Perspective | 13 Nov 2024 | https://arxiv.org/abs/2409.18696 | https://github.com/ForestsKing/GLAFF
+EffiCANet: Efficient Time Series Forecasting with Convolutional Attention | 07 Nov 2024 | https://arxiv.org/abs/2411.04669
+Peri-midFormer: Periodic Pyramid Transformer for Time Series Analysis | 07 Nov 2024 | https://arxiv.org/abs/2411.04554 | https://github.com/WuQiangXDU/Peri-midFormer
+From Similarity to Superiority: Channel Clustering for Time Series Forecasting | 06 Nov 2024 | https://arxiv.org/abs/2404.01340 | https://github.com/graph-and-geometric-learning/timeseriesccm
+A Mamba Foundation Model for Time Series Forecasting | 05 Nov 2024 | https://arxiv.org/abs/2411.02941
+Cross-Domain Pre-training with Language Models for Transferable Time Series Representations | 05 Nov 2024 | https://arxiv.org/abs/2403.12372 | https://github.com/mingyue-cheng/crosstimenet
+ElasTST: Towards Robust Varied-Horizon Forecasting with Elastic Time-Series Transformer | 04 Nov 2024 | https://arxiv.org/abs/2411.01842 | https://github.com/microsoft/ProbTS/tree/elastst
+FilterNet: Harnessing Frequency Filters for Time Series Forecasting | 03 Nov 2024 | https://arxiv.org/abs/2411.01623 | https://github.com/aikunyi/filternet
+Ada-MSHyper: Adaptive Multi-Scale Hypergraph Transformer for Time Series Forecasting | 31 Oct 2024 | https://arxiv.org/abs/2410.23992 | https://github.com/shangzongjiang/Ada-MSHyper
+FlexTSF: A Universal Forecasting Model for Time Series with Variable Regularities | 30 Oct 2024 | https://arxiv.org/abs/2410.23160 | https://github.com/jingge326/flextsf
+From News to Forecast: Integrating Event Analysis in LLM-Based Time Series Forecasting with Reflection | 30 Oct 2024 | https://arxiv.org/abs/2409.17515 | https://github.com/ameliawong1996/From_News_to_Forecast
+Parsimony or Capability? Decomposition Delivers Both in Long-term Time Series Forecasting | 16 Oct 2024 | https://arxiv.org/abs/2401.11929
+Towards Neural Scaling Laws for Time Series Foundation Models | 16 Oct 2024 | https://arxiv.org/abs/2410.12360
+FoundTS: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting | 15 Oct 2024 | https://arxiv.org/abs/2410.11802
+LLM-Mixer: Multiscale Mixing in LLMs for Time Series Forecasting | 15 Oct 2024 | https://arxiv.org/abs/2410.11674 | https://github.com/Kowsher/LLMMixer
+Moirai-MoE: Empowering Time Series Foundation Models with Sparse Mixture of Experts | 14 Oct 2024 | https://arxiv.org/abs/2410.10469 | https://github.com/SalesforceAIResearch/uni2ts/tree/main/project/moirai-moe-1
+Are Self-Attentions Effective for Time Series Forecasting? | 12 Oct 2024 | https://arxiv.org/abs/2405.16877 | https://github.com/dongbeank/cats
+Mamba4Cast: Efficient Zero-Shot Time Series Forecasting with State Space Models | 12 Oct 2024 | https://arxiv.org/abs/2410.09385 | https://github.com/automl/mamba4cast
+TimeBridge: Non-Stationarity Matters for Long-term Time Series Forecasting | 12 Oct 2024 | https://arxiv.org/abs/2410.04442 | https://github.com/hank0626/timebridge
+Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting | 08 Oct 2024 | https://arxiv.org/abs/2405.14252
+Timer-XL: Long-Context Transformers for Unified Time Series Forecasting | 07 Oct 2024 | https://arxiv.org/abs/2410.04803
+Autoregressive Moving-average Attention Mechanism for Time Series Forecasting | 04 Oct 2024 | https://arxiv.org/abs/2410.03159 | https://github.com/ljc-fvnr/arma-attention
+NuwaTS: a Foundation Model Mending Every Incomplete Time Series | 02 Oct 2024 | https://arxiv.org/abs/2405.15317 | https://github.com/chengyui/nuwats
+Frequency Adaptive Normalization For Non-stationary Time Series Forecasting | 30 Sep 2024 | https://arxiv.org/abs/2409.20371 | https://github.com/wayne155/FAN
+Evolving Multi-Scale Normalization for Time Series Forecasting under Distribution Shifts | 29 Sep 2024 | https://arxiv.org/abs/2409.19718 | https://github.com/qindalin/evomsn
+CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns | 27 Sep 2024 | https://arxiv.org/abs/2409.18479 | https://github.com/ACAT-SCUT/CycleNet
+Double-Path Adaptive-correlation Spatial-Temporal Inverted Transformer for Stock Time Series Forecasting | 24 Sep 2024 | https://arxiv.org/abs/2409.15662
+Time-MoE: Billion-Scale Time Series Foundation Models with Mixture of Experts | 24 Sep 2024 | https://arxiv.org/abs/2409.16040 | https://github.com/time-moe/time-moe
+VisionTS: Visual Masked Autoencoders Are Free-Lunch Zero-Shot Time Series Forecasters | 30 Aug 2024 | https://arxiv.org/abs/2408.17253 | https://github.com/keytoyze/visionts
+Mamba or Transformer for Time Series Forecasting? Mixture of Universals (MoU) Is All You Need | 28 Aug 2024 | https://www.arxiv.org/abs/2408.15997 | https://github.com/lunaaa95/mou
+PRformer: Pyramidal Recurrent Transformer for Multivariate Time Series Forecasting | 20 Aug 2024 | https://arxiv.org/abs/2408.10483 | https://github.com/usualheart/prformer
+Rethinking Channel Dependence for Multivariate Time Series Forecasting: Learning from Leading Indicators | 13 Aug 2024 | https://arxiv.org/abs/2401.17548 | https://github.com/sjtu-dmtai/lift
+Bidirectional Generative Pre-training for Improving Time Series Representation Learning | 11 Aug 2024 | https://arxiv.org/abs/2402.09558 | https://github.com/li-lab-mcgill/bitimelygpt
+Scalable Transformer for High Dimensional Multivariate Time Series Forecasting | 08 Aug 2024 | https://arxiv.org/abs/2408.04245 | https://github.com/xinzzzhou/scalabletransformer4highdimensionmtsf
+RHiOTS: A Framework for Evaluating Hierarchical Time Series Forecasting Algorithms | 06 Aug 2024 | https://www.arxiv.org/abs/2408.03399 | https://github.com/luisroque/robustness_hierarchical_time_series_forecasting_algorithms
+Fine-grained Attention in Hierarchical Transformers for Tabular Time-series | 02 Aug 2024 | https://arxiv.org/abs/2406.15327 | https://github.com/raphaaal/fieldy
+DAM: Towards A Foundation Model for Time Series Forecasting | 25 Jul 2024 | https://arxiv.org/abs/2407.17880
+A Survey of Explainable Artificial Intelligence (XAI) in Financial Time Series Forecasting | 22 Jul 2024 | https://arxiv.org/abs/2407.15909
+Deep Functional Factor Models: Forecasting High-Dimensional Functional Time Series via Bayesian Nonparametric Factorization | 18 Jul 2024 | https://arxiv.org/abs/2305.14543 | https://github.com/yiruiliu110/df2m
+Deep Time Series Models: A Comprehensive Survey and Benchmark | 18 Jul 2024 | https://arxiv.org/abs/2407.13278 | https://github.com/thuml/Time-Series-Library
+Large Pre-trained time series models for cross-domain Time series analysis tasks | 11 Jul 2024 | https://arxiv.org/abs/2311.11413
+Loss Shaping Constraints for Long-Term Time Series Forecasting | 11 Jul 2024 | https://arxiv.org/abs/2402.09373
+ViTime: A Visual Intelligence-Based Foundation Model for Time Series Forecasting | 10 Jul 2024 | https://arxiv.org/abs/2407.07311 | https://github.com/IkeYang/ViTime
+S2IP-LLM: Semantic Space Informed Prompt Learning with LLM for Time Series Forecasting | 07 Jul 2024 | https://arxiv.org/abs/2403.05798 | https://github.com/panzijie825/s2ip-llm
+Fredformer: Frequency Debiased Transformer for Time Series Forecasting | 03 Jul 2024 | https://arxiv.org/abs/2406.09009 | https://github.com/chenzrg/fredformer
+Revitalizing Multivariate Time Series Forecasting: Learnable Decomposition with Inter-Series Dependencies and Intra-Series Variations Modeling | 01 Jul 2024 | https://arxiv.org/abs/2402.12694 | https://github.com/Levi-Ackman/Leddam
+Addressing Prediction Delays in Time Series Forecasting: A Continuous GRU Approach with Derivative Regularization | 29 Jun 2024 | https://arxiv.org/abs/2407.01622 | https://github.com/sheoyon-jhin/contime
+SigKAN: Signature-Weighted Kolmogorov-Arnold Networks for Time Series | 25 Jun 2024 | https://arxiv.org/abs/2406.17890 | https://github.com/remigenet/SigKAN
+Are Language Models Actually Useful for Time Series Forecasting? | 22 Jun 2024 | https://arxiv.org/abs/2406.16964 | https://github.com/bennytmt/ts_models
+DeciMamba: Exploring the Length Extrapolation Potential of Mamba | 20 Jun 2024 | https://arxiv.org/abs/2406.14528 | https://github.com/assafbk/decimamba
+Understanding Different Design Choices in Training Large Time Series Models | 20 Jun 2024 | https://arxiv.org/abs/2406.14045 | https://github.com/daochenzha/ltsm/
+Foundation Models for Time Series Analysis: A Tutorial and Survey | 18 Jun 2024 | https://arxiv.org/abs/2403.14735
+Generative Pretrained Hierarchical Transformer for Time Series Forecasting | 18 Jun 2024 | https://arxiv.org/abs/2402.16516 | https://github.com/icantnamemyself/gpht
+ProbTS: Benchmarking Point and Distributional Forecasting across Diverse Prediction Horizons | 17 Jun 2024 | https://arxiv.org/abs/2310.07446 | https://github.com/microsoft/probts
+LLMFactor: Extracting Profitable Factors through Prompts for Explainable Stock Movement Prediction | 16 Jun 2024 | https://arxiv.org/abs/2406.10811
+SOFTS: Efficient Multivariate Time Series Forecasting with Series-Core Fusion | 12 Jun 2024 | https://arxiv.org/abs/2404.14197 | https://github.com/secilia-cxy/softs
+Time-MMD: A New Multi-Domain Multimodal Dataset for Time Series Analysis | 12 Jun 2024 | https://arxiv.org/abs/2406.08627 | https://github.com/adityalab/time-mmd
+A Survey on Diffusion Models for Time Series and Spatio-Temporal Data | 11 Jun 2024 | https://arxiv.org/abs/2404.18886 | https://github.com/yyysjz1997/awesome-timeseries-spatiotemporal-diffusion-model
+Calibration of Time-Series Forecasting: Detecting and Adapting Context-Driven Distribution Shift | 11 Jun 2024 | https://arxiv.org/abs/2310.14838 | https://github.com/half111/calibration_cds
+Kolmogorov-Arnold Networks for Time Series: Bridging Predictive Power and Interpretability | 04 Jun 2024 | https://arxiv.org/abs/2406.02496
+Timer: Generative Pre-trained Transformers Are Large Time Series Models | 04 Jun 2024 | https://arxiv.org/abs/2402.02368 | https://github.com/thuml/Large-Time-Series-Model
+SAMformer: Unlocking the Potential of Transformers in Time Series Forecasting with Sharpness-Aware Minimization and Channel-Wise Attention | 03 Jun 2024 | https://arxiv.org/abs/2402.10198 | https://github.com/romilbert/samformer
+SparseTSF: Modeling Long-term Time Series Forecasting with 1k Parameters | 03 Jun 2024 | https://arxiv.org/abs/2405.00946 | https://github.com/lss-1138/SparseTSF
+BayOTIDE: Bayesian Online Multivariate Time series Imputation with functional decomposition | 30 May 2024 | https://arxiv.org/abs/2308.14906 | https://github.com/xuangu-fang/bayotide
+Efficient and Effective Time-Series Forecasting with Spiking Neural Networks | 29 May 2024 | https://arxiv.org/abs/2402.01533 | https://github.com/microsoft/seqsnn
+UNITS: A Unified Multi-Task Time Series Model | 29 May 2024 | https://arxiv.org/abs/2403.00131 | https://github.com/mims-harvard/UniTS
+ForecastGrapher: Redefining Multivariate Time Series Forecasting with Graph Neural Networks | 28 May 2024 | https://arxiv.org/abs/2405.18036
+MambaTS: Improved Selective State Space Models for Long-term Time Series Forecasting | 26 May 2024 | https://arxiv.org/abs/2405.16440 | https://github.com/XiudingCai/MambaTS-pytorch
+CALF: Aligning LLMs for Time Series Forecasting via Cross-modal Fine-Tuning | 23 May 2024 | https://arxiv.org/abs/2403.07300 | https://github.com/Hank0626/CALF
+TimeMixer: Decomposable Multiscale Mixing for Time Series Forecasting | 23 May 2024 | https://arxiv.org/abs/2405.14616 | https://github.com/kwuking/TimeMixer
+GinAR: An End-To-End Multivariate Time Series Forecasting Model Suitable for Variable Missing | 18 May 2024 | https://arxiv.org/abs/2405.11333 | https://github.com/chengqingyu/ginar
+Bi-Mamba+: Bidirectional Mamba for Time Series Forecasting | 17 May 2024 | https://arxiv.org/abs/2404.15772
+DGCformer: Deep Graph Clustering Transformer for Multivariate Time Series Forecasting | 14 May 2024 | https://arxiv.org/abs/2405.08440
+Kolmogorov-Arnold Networks (KANs) for Time Series Analysis | 14 May 2024 | https://arxiv.org/abs/2405.08790
+TKAN: Temporal Kolmogorov-Arnold Networks | 12 May 2024 | https://arxiv.org/abs/2405.07344 | https://github.com/remigenet/tkan
+DTMamba : Dual Twin Mamba for Time Series Forecasting | 11 May 2024 | https://arxiv.org/abs/2405.07022
+Time Evidence Fusion Network: Multi-source View in Long-Term Time Series Forecasting | 10 May 2024 | https://arxiv.org/abs/2405.06419 | https://github.com/ztxtech/Time-Evidence-Fusion-Network
+T-Rep: Representation Learning for Time Series using Time-Embeddings | 09 May 2024 | https://arxiv.org/abs/2310.04486 | https://github.com/let-it-care/t-rep
+A Survey of Time Series Foundation Models: Generalizing Time Series Representation with Large Language Model | 07 May 2024 | https://arxiv.org/abs/2405.02358 | https://github.com/start2020/awesome-timeseries-llm-fm
+TSLANet: Rethinking Transformers for Time Series Representation Learning | 06 May 2024 | https://arxiv.org/abs/2404.08472 | https://github.com/emadeldeen24/tslanet
+Irregular Multivariate Time Series Forecasting: A Transformable Patching Graph Neural Networks Approach | 02 May 2024 | https://openreview.net/forum?id=UZlMXUGI6e
+Integrating Mamba and Transformer for Long-Short Range Time Series Forecasting | 23 Apr 2024 | https://arxiv.org/abs/2404.14757 | https://github.com/XiongxiaoXu/Mambaformer-in-Time-Series
+Biased Temporal Convolution Graph Network for Time Series Forecasting with Missing Values | 21 Apr 2024 | https://openreview.net/forum?id=O9nZCwdGcG | https://github.com/chenxiaodanhit/BiTGraph
+A decoder-only foundation model for time-series forecasting | 17 Apr 2024 | https://arxiv.org/abs/2310.10688 | https://github.com/google-research/timesfm
+Towards Transparent Time Series Forecasting | 15 Apr 2024 | https://openreview.net/forum?id=TYXtXLYHpR
+Tiny Time Mixers (TTMs): Fast Pre-trained Models for Enhanced Zero/Few-Shot Forecasting of Multivariate Time Series | 09 Apr 2024 | https://arxiv.org/abs/2401.03955 | https://github.com/ibm-granite/granite-tsfm
+ATFNet: Adaptive Time-Frequency Ensembled Network for Long-term Time Series Forecasting | 08 Apr 2024 | https://arxiv.org/abs/2404.05192 | https://github.com/yhyhyhyhyhy/atfnet
+OneShotSTL: One-Shot Seasonal-Trend Decomposition For Online Time Series Anomaly Detection And Forecasting | 04 Apr 2023 | https://arxiv.org/abs/2304.01506 | https://github.com/xiao-he/oneshotstl
+Is Mamba Effective for Time Series Forecasting? | 02 Apr 2024 | https://arxiv.org/abs/2403.11144 | https://github.com/wzhwzhwzh0921/S-D-Mamba
+TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting | 02 Apr 2024 | https://arxiv.org/abs/2310.04948 | https://github.com/dc-research/tempo
+MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection | 29 Mar 2024 | https://arxiv.org/abs/2403.19888
+TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods | 29 Mar 2024 | https://arxiv.org/abs/2403.20150 | https://github.com/decisionintelligence/TFB
+An Analysis of Linear Time Series Forecasting Models | 25 Mar 2024 | https://arxiv.org/abs/2403.14587 | https://github.com/sir-lab/linear-forecasting
+An End-to-End Structure with Novel Position Mechanism and Improved EMD for Stock Forecasting | 25 Mar 2024 | https://arxiv.org/abs/2404.07969 | https://github.com/durandallee/aceformer
+HDMixer: Hierarchical Dependency with Extendable Patch for Multivariate Time Series Forecasting | 24 Mar 2024 | https://ojs.aaai.org/index.php/AAAI/article/view/29155
+Latent Diffusion Transformer for Probabilistic Time Series Forecasting | 24 Mar 2024 | https://ojs.aaai.org/index.php/AAAI/article/view/29085
+StockMixer: A Simple Yet Strong MLP-Based Architecture for Stock Price Forecasting | 24 Mar 2024 | https://ojs.aaai.org/index.php/AAAI/article/view/28681 | https://github.com/SJTU-Quant/StockMixer
+ModernTCN: A Modern Pure Convolution Structure for General Time Series Analysis | 22 Mar 2024 | https://openreview.net/forum?id=vpJMJerXHU | https://github.com/luodhhh/ModernTCN
+SiMBA: Simplified Mamba-Based Architecture for Vision and Multivariate Time series | 22 Mar 2024 | https://arxiv.org/abs/2403.15360 | https://github.com/badripatro/simba
+iTransformer: Inverted Transformers Are Effective for Time Series Forecasting | 14 Mar 2024 | https://arxiv.org/abs/2310.06625 | https://github.com/thuml/iTransformer
+Self-Supervised Learning for Time Series: Contrastive or Generative? | 14 Mar 2024 | https://arxiv.org/abs/2403.09809 | https://github.com/dl4mhealth/ssl_comparison
+TimeMachine: A Time Series is Worth 4 Mambas for Long-term Forecasting | 14 Mar 2024 | https://arxiv.org/abs/2403.09898 | https://github.com/atik-ahamed/timemachine
+TimeDRL: Disentangled Representation Learning for Multivariate Time-Series | 13 Mar 2024 | https://arxiv.org/abs/2312.04142 | https://github.com/blacksnail789521/timedrl
+Chronos: Learning the Language of Time Series | 12 Mar 2024 | https://arxiv.org/abs/2403.07815 | https://github.com/amazon-science/chronos-forecasting
+Multi-Patch Prediction: Adapting LLMs for Time Series Representation Learning | 10 Mar 2024 | https://arxiv.org/abs/2402.04852 | https://github.com/yxbian23/aLLM4TS
+MG-TSD: Multi-Granularity Time Series Diffusion Models with Guided Learning Process | 09 Mar 2024 | https://arxiv.org/abs/2403.05751 | https://github.com/hundredl/mg-tsd
+Considering Nonstationary within Multivariate Time Series with Variational Hierarchical Transformer for Forecasting | 08 Mar 2024 | https://arxiv.org/abs/2403.05406 | https://github.com/flare200020/HTV_Trans
+Pathformer: Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting | 07 Mar 2024 | https://arxiv.org/abs/2402.05956 | https://github.com/decisionintelligence/pathformer
+Periodicity Decoupling Framework for Long-term Series Forecasting | 06 Mar 2024 | https://openreview.net/forum?id=dp27P5HBBt | https://github.com/Hank0626/PDF
+InjectTST: A Transformer Method of Injecting Global Information into Independent Channels for Long Time Series Forecasting | 05 Mar 2024 | https://arxiv.org/abs/2403.02814
+CATS: Enhancing Multivariate Time Series Forecasting by Constructing Auxiliary Time Series as Exogenous Variables | 04 Mar 2024 | https://arxiv.org/abs/2403.01673 | https://github.com/LJC-FVNR/CATS
+Diffusion-TS: Interpretable Diffusion for General Time Series Generation | 04 Mar 2024 | https://arxiv.org/abs/2403.01742 | https://github.com/y-debug-sys/diffusion-ts
+Learning to Generate Explainable Stock Predictions using Self-Reflective Large Language Models | 29 Feb 2024 | https://arxiv.org/abs/2402.03659 | https://github.com/koa-fin/sep
+TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous Variables | 29 Feb 2024 | https://arxiv.org/abs/2402.19072 | https://github.com/thuml/timexer
+UniTS: Building a Unified Time Series Model | 29 Feb 2024 | https://arxiv.org/abs/2403.00131 | https://github.com/mims-harvard/UniTS
+TOTEM: TOkenized Time Series EMbeddings for General Time Series Analysis | 26 Feb 2024 | https://arxiv.org/abs/2402.16412 | https://github.com/saberatalukder/totem
+LSTPrompt: Large Language Models as Zero-Shot Time Series Forecasters by Long-Short-Term Prompting | 25 Feb 2024 | https://arxiv.org/abs/2402.16132 | https://github.com/AdityaLab/lstprompt
+TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series | 22 Feb 2024 | https://arxiv.org/abs/2308.08241 | https://github.com/scxsunchenxi/test
+CARD: Channel Aligned Robust Blend Transformer for Time Series Forecasting | 16 Feb 2024 | https://arxiv.org/abs/2305.12095 | https://github.com/wxie9/card
+ContiFormer: Continuous-Time Transformer for Irregular Time Series Modeling | 16 Feb 2024 | https://arxiv.org/abs/2402.10635 | https://github.com/microsoft/SeqML/tree/main/ContiFormer
+Large Language Models for Forecasting and Anomaly Detection: A Systematic Literature Review | 15 Feb 2024 | https://arxiv.org/abs/2402.10350
+Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting | 08 Feb 2024 | https://arxiv.org/abs/2310.08278 | https://github.com/time-series-foundation-models/lag-llama
+MultiResFormer: Transformer with Adaptive Multi-Resolution Modeling for General Time Series Forecasting | 08 Feb 2024 | https://arxiv.org/abs/2311.18780
+MOMENT: A Family of Open Time-series Foundation Models | 06 Feb 2024 | https://arxiv.org/abs/2402.03885 | https://anonymous.4open.science/r/BETT-773F/README.md
+DiffsFormer: A Diffusion Transformer on Stock Factor Augmentation | 05 Feb 2024 | https://arxiv.org/abs/2402.06656
+Position Paper: What Can Large Language Models Tell Us about Time Series Analysis | 05 Feb 2024 | https://arxiv.org/abs/2402.02713
+AutoTimes: Autoregressive Time Series Forecasters via Large Language Models | 04 Feb 2024 | https://arxiv.org/abs/2402.02370 | https://github.com/thuml/AutoTimes
+FreDF: Learning to Forecast in Frequency Domain | 04 Feb 2024 | https://arxiv.org/abs/2402.02399 | https://github.com/master-plc/fredf
+Unified Training of Universal Time Series Forecasting Transformers | 04 Feb 2024 | https://arxiv.org/abs/2402.02592 | https://github.com/SalesforceAIResearch/uni2ts
+RobustTSF: Towards Theory and Design of Robust Time Series Forecasting with Anomalies | 03 Feb 2024 | https://arxiv.org/abs/2402.02032 | https://github.com/haochenglouis/robusttsf
+Large Language Models for Time Series: A Survey | 02 Feb 2024 | https://arxiv.org/abs/2402.01801 | https://github.com/xiyuanzh/awesome-llm-time-series
+A Survey of Deep Learning and Foundation Models for Time Series Forecasting | 25 Jan 2024 | https://arxiv.org/abs/2401.13912
+LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters | 18 Jan 2024 | https://arxiv.org/abs/2308.08469
+MSHyper: Multi-Scale Hypergraph Transformer for Long-Range Time Series Forecasting | 17 Jan 2024 | https://arxiv.org/abs/2401.09261
+RWKV-TS: Beyond Traditional Recurrent Neural Network for Time Series Tasks | 17 Jan 2024 | https://arxiv.org/abs/2401.09093 | https://github.com/howard-hou/RWKV-TS
+CNN Kernels Can Be the Best Shapelets | 16 Jan 2024 | https://openreview.net/forum?id=O8ouVV8PjF
+GAFormer: Enhancing Timeseries Transformers Through Group-Aware Embeddings | 16 Jan 2024 | https://openreview.net/forum?id=c56TWtYp0W | https://github.com/nerdslab/GAFormer
+Generative Learning for Financial Time Series with Irregular and Scale-Invariant Patterns | 16 Jan 2024 | https://openreview.net/forum?id=CdjnzWsQax
+Interpretable Sparse System Identification: Beyond Recent Deep Learning Techniques on Time-Series Prediction | 16 Jan 2024 | https://openreview.net/forum?id=aFWUY3E7ws
+Leveraging Generative Models for Unsupervised Alignment of Neural Time Series Data | 16 Jan 2024 | https://openreview.net/forum?id=9zhHVyLY4K
+Self-Supervised Contrastive Learning for Long-term Forecasting | 16 Jan 2024 | https://openreview.net/forum?id=nBCuRzjqK7 | https://github.com/junwoopark92/Self-Supervised-Contrastive-Forecsating
+SocioDojo: Building Lifelong Analytical Agents with Real-world Text and Time Series | 16 Jan 2024 | https://openreview.net/forum?id=s9z0HzWJJp
+Transformer-Modulated Diffusion Models for Probabilistic Multivariate Time Series Forecasting | 16 Jan 2024 | https://openreview.net/forum?id=qae04YACHs
+HiMTM: Hierarchical Multi-Scale Masked Time Series Modeling for Long-Term Forecasting | 10 Jan 2024 | https://arxiv.org/abs/2401.05012
+Universal Time-Series Representation Learning: A Survey | 08 Jan 2024 | https://arxiv.org/abs/2401.03717 | https://github.com/itouchz/awesome-deep-time-series-representations
+UnetTSF: A Better Performance Linear Complexity Time Series Prediction Model | 05 Jan 2024 | https://arxiv.org/abs/2401.03001 | https://github.com/lichuustc/UnetTSF
+U-Mixer: An Unet-Mixer Architecture with Stationarity Correction for Time Series Forecasting | 04 Jan 2024 | https://arxiv.org/abs/2401.02236 | https://github.com/XiangMa-Shaun/U-Mixer
+D-PAD: Deep-Shallow Multi-Frequency Patterns Disentangling for Time Series Forecasting | 26 Mar 2024 | https://arxiv.org/abs/2403.17814 | https://github.com/XYBbo5/D-PAD 
+TimeCMA: Towards LLM-Empowered Time Series Forecasting via Cross-Modality Alignment | 3 Jun 2024 | https://arxiv.org/abs/2406.01638 | https://github.com/UConn-DSIS/Empowering-Time-Series-Analysis-with-LLM
+ROSE: Register Assisted General Time Series Forecasting with Decomposed Frequency Learning | 24 May 2024 |https://arxiv.org/abs/2405.17478 | 
+ConvTimeNet: A Deep Hierarchical Fully Convolutional Model for Multivariate Time Series Analysis | 3 Mar 2024 | https://arxiv.org/abs/2403.01493 | https://github.com/Mingyue-Cheng/ConvTimeNet
+AMD: Adaptive Multi-Scale Decomposition Framework for Time Series Forecasting | 06 Jun 2024 | https://arxiv.org/abs/2406.03751| https://github.com/TROUBADOUR000/AMD
+GTT-Large: Only the Curve Shape Matters: Training Foundation Models for Zero-Shot Multivariate Time Series Forecasting through Next Curve Shape Prediction | 12 Feb 2024 | https://www.arxiv.org/abs/2402.07570 | https://github.com/cfeng783/GTT 
+LTBoost: Boosted Hybrids of Ensemble Linear and Gradient Algorithms for the Long-term Time Series Forecasting | 21 October 2024 | https://dl.acm.org/doi/abs/10.1145/3627673.3679527 |  https://github.com/hubtru/LTBoost
+GridTST: Leveraging 2D Information for Long-term Time Series Forecasting with Vanilla Transformers | 22 May 2024 | https://arxiv.org/abs/2405.13810 | https://github.com/Hannibal046/GridTST
+VCformer: Variable Correlation Transformer with Inherent Lagged Correlation for Multivariate Time Series Forecasting | 19 May 2024 | https://arxiv.org/abs/2405.11470 | https://github.com/CSyyn/VCformer
+Simba: Mamba-360: Survey of State Space Models as Transformer Alternative for Long Sequence Modelling: Methods, Applications, and Challenges | 24 Apr 2024 | https://arxiv.org/abs/2404.16112 | https://github.com/badripatro/mamba360
+CPNet: Boosting MLPs with a Coarsening Strategy for Long-Term Time Series Forecasting | 6 May 2024  | https://arxiv.org/abs/2405.03199 | https://github.com/nannanbian/cpnet
+RPMixer: Shaking Up Time Series Forecasting with Random Projections for Large Spatial-Temporal Data | 16 Feb 2024 | https://arxiv.org/abs/2402.10487 |
+Aaren: Attention as an RNN | 22 May 2024 | https://arxiv.org/abs/2405.13956 |
+DeformTime: Capturing Variable Dependencies with Deformable Attention for Time Series Forecasting | 11 Jun 2024 | https://arxiv.org/abs/2406.07438 | https://github.com/ClaudiaShu/DeformTime
+GBRT: Effective Benchmarks for Optical Turbulence Modeling | 7 Jan 2024 | https://arxiv.org/abs/2401.03573 | https://github.com/CDJellen/otbench
+Mean Window Forecast: Effective Benchmarks for Optical Turbulence Modeling | 7 Jan 2024 | https://arxiv.org/abs/2401.03573 | https://github.com/CDJellen/otbench
+Minute Climatology: Effective Benchmarks for Optical Turbulence Modeling | 7 Jan 2024 | https://arxiv.org/abs/2401.03573 | https://github.com/CDJellen/otbench
+RNN: Effective Benchmarks for Optical Turbulence Modeling | 7 Jan 2024 | https://arxiv.org/abs/2401.03573 | https://github.com/CDJellen/otbench
+Climatology: Effective Benchmarks for Optical Turbulence Modeling | 7 Jan 2024 | https://arxiv.org/abs/2401.03573 | https://github.com/CDJellen/otbench
+Linear Forecast: Effective Benchmarks for Optical Turbulence Modeling | 7 Jan 2024 | https://arxiv.org/abs/2401.03573 | https://github.com/CDJellen/otbench
+Persistence: Effective Benchmarks for Optical Turbulence Modeling | 7 Jan 2024 | https://arxiv.org/abs/2401.03573 | https://github.com/CDJellen/otbench
 
-TimeMachine: A Time Series is Worth 4 Mambas for Long-term Forecasting | 01 Jan 2024 | |
-GPHT: Generative Pretrained Hierarchical Transformer for Time Series Forecasting | 01 Jan 2024 | | 
-PatchTST + LIFT: Rethinking Channel Dependence for Multivariate Time Series Forecasting: Learning from Leading Indicators | 01 Jan 2024 | |
-GTT-Large: Only the Curve Shape Matters: Training Foundation Models for Zero-Shot Multivariate Time Series Forecasting through Next Curve Shape Prediction | 01 Jan 2024 | | 
-MOIRAIBase: Unified Training of Universal Time Series Forecasting Transformers | 01 Jan 2024 | | 
-Pathformer: Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting | 01 Jan 2024 | | 
-GridTST: Leveraging 2D Information for Long-term Time Series Forecasting with Vanilla Transformers | 01 Jan 2024 | | 
-SparseTSF: Modeling Long-term Time Series Forecasting with 1k Parameters | 01 Jan 2024 | | 
-Bi-Mamba4TS: Bidirectional Mamba for Time Series Forecasting | 01 Jan 2024 | | 
-CALF: Aligning LLMs for Time Series Forecasting via Cross-modal Fine-Tuning | 01 Jan 2024 | | 
-GTT-Smal: Only the Curve Shape Matters: Training Foundation Models for Zero-Shot Multivariate Time Series Forecasting through Next Curve Shape Prediction | 01 Jan 2024 | | 
-Minusformer-96: Improving Time Series Forecasting by Progressively Learning Residuals | 01 Jan 2024 | |
-GTT-Tiny: Only the Curve Shape Matters: Training Foundation Models for Zero-Shot Multivariate Time Series Forecasting through Next Curve Shape Prediction | 01 Jan 2024 | | 
-ForecastGrapher: Redefining Multivariate Time Series Forecasting with Graph Neural Networks | 01 Jan 2024 | | 
-VCformer: Variable Correlation Transformer with Inherent Lagged Correlation for Multivariate Time Series Forecasting | 01 Jan 2024 | | 
-Simba: Mamba-360: Survey of State Space Models as Transformer Alternative for Long Sequence Modelling: Methods, Applications, and Challenges | 01 Jan 2024 | | 
-TEFN: Time Evidence Fusion Network: Multi-source View in Long-Term Time Series Forecasting | 01 Jan 2024 | | 
-CPNet: Boosting MLPs with a Coarsening Strategy for Long-Term Time Series Forecasting | 01 Jan 2024 | | 
-SOFTS: Efficient Multivariate Time Series Forecasting with Series-Core Fusion | 01 Jan 2024 | | 
-
-S-Mamba: Is Mamba Effective for Time Series Forecasting? | 01 Jan 2024 | |
-ATFNet: Adaptive Time-Frequency Ensembled Network for Long-term Time Series Forecasting | 01 Jan 2024 | |
-MOIRAILarge: Unified Training of Universal Time Series Forecasting Transformers | 01 Jan 2024 | |
-RPMixer: Shaking Up Time Series Forecasting with Random Projections for Large Spatial-Temporal Data | 01 Jan 2024 | |
-Aaren: Attention as an RNN | 01 Jan 2024 | |
-DeformTime: Capturing Variable Dependencies with Deformable Attention for Time Series Forecasting | 01 Jan 2024 | |
-AutoCon: Self-Supervised Contrastive Learning for Long-term Forecasting | 01 Jan 2024 | |
-GBRT: Effective Benchmarks for Optical Turbulence Modeling | 01 Jan 2024 | |
-Mean Window Forecast: Effective Benchmarks for Optical Turbulence Modeling | 01 Jan 2024 | |
-Minute Climatology: Effective Benchmarks for Optical Turbulence Modeling | 01 Jan 2024 | |
-RNN: Effective Benchmarks for Optical Turbulence Modeling | 01 Jan 2024 | |
-Climatology: Effective Benchmarks for Optical Turbulence Modeling | 01 Jan 2024 | |
-Linear Forecast: Effective Benchmarks for Optical Turbulence Modeling | 01 Jan 2024 | |
-Persistence: Effective Benchmarks for Optical Turbulence Modeling | 01 Jan 2024 | |
-Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting | 01 Jan 2023 | |
-TimesFM: A decoder-only foundation model for time-series forecasting | 01 Jan 2023 | |
-PatchMixer: A Patch-Mixing Architecture for Long-Term Time Series Forecasting | 01 Jan 2023 | |
-UniTime: A Language-Empowered Unified Model for Cross-Domain Time Series Forecasting | 01 Jan 2023 | |
-SegRNN: Segment Recurrent Neural Network for Long-Term Time Series Forecasting | 01 Jan 2023 | |
-
-TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting | 01 Jan 2023 | |
-WinNet: Make Only One Convolutional Layer Effective for Time Series Forecasting | 01 Jan 2023 | |
-RLinear: Revisiting Long-term Time Series Forecasting: An Investigation on Linear Mapping | 01 Jan 2023 | |
-TSMixer: Lightweight MLP-Mixer Model for Multivariate Time Series Forecasting | 01 Jan 2023 | |
-FITS: Modeling Time Series with Parameters | 01 Jan 2023 | |
-MoLE-RLinear: Mixture-of-Linear-Experts for Long-term Time Series Forecasting | 01 Jan 2023 | |
-TiDE: Long-term Forecasting with TiDE: Time-series Dense Encoder | 01 Jan 2023 | |
-MoLE-DLinear: Mixture-of-Linear-Experts for Long-term Time Series Forecasting | 01 Jan 2023 | |
-Basisformer: Attention-based Time Series Forecasting with Learnable and Interpretable Basis | 01 Jan 2023 | |
-Time-LLM: Time Series Forecasting by Reprogramming Large Language Models | 01 Jan 2023 | |
-iTransformer: Inverted Transformers Are Effective for Time Series Forecasting | 01 Jan 2023 | |
-SRCNet: A New Deep Learning Architecture with Inductive Bias Balance for Transformer Oil Temperature Forecasting | 01 Jan 2023 | |
-PatchTST/64: A Time Series is Worth 64 Words: Long-term Forecasting with Transformers | 01 Jan 2022 | |
-Parallel Series Transformer: How Features Benefit: Parallel Series Embedding for Multivariate Time Series Forecasting with Transformer | 01 Jan 2022 | |
-NLinear: Are Transformers Effective for Time Series Forecasting? | 01 Jan 2022 | |
-FiLM: Frequency improved Legendre Memory Model for Long-term Time Series Forecasting | 01 Jan 2022 | |
-N-HiTS (Neural Hierarchical Interpolation for Time Series) | 01 Jan 2022 | |
-FEDformer (Frequency Enhanced Decomposed Transformer) | 01 Jan 2022 | |
-ETSformer | 01 Jan 2022 | |
-
-DLinear (Decomposition Linear) | 01 Jan 2022 | |
-SCINet: Time Series Modeling and Forecasting with Sample Convolution and Interaction | 01 Jan 2021 | |
-LLaTA: Taming Pre-trained Language Models with N-gram Representations for Low-Resource Domain Adaptation | 01 Jan 2021 | |
-Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting | 01 Jan 2021 | |
-Transformer: Long-term series forecasting with Query Selector -- efficient model of sparse attention | 01 Jan 2021 | |
-QuerySelector: Long-term series forecasting with Query Selector -- efficient model of sparse attention | 01 Jan 2021 | |
-STGCN-Cov: Conditional Temporal Neural Processes with Covariance Loss | 01 Jan 2021 | |
-Deep Renewal Processes | 01 Jan 2021 | |
-Informer: | 01 Jan 2021 | |
-Pyraformer: | 01 Jan 2021  | |
-TSE-SC: Traffic transformer: Capturing the continuity and periodicity of time series for traffic forecasting | 01 Jan 2020 | |
-DeepAR | 01 Jan 2020 | |
-SimpleFeedForward | 01 Jan 2020 | |
-Temporal Fusion Transformer (TFT) | 01 Jan 2020 | |
-ForecastNet: A Time-Variant Deep Feed-Forward Neural Network Architecture for Multi-Step-Ahead Time-Series Forecasting | 01 Jan 2020 | |
+PatchMixer: A Patch-Mixing Architecture for Long-Term Time Series Forecasting | 2023 | |
+UniTime: A Language-Empowered Unified Model for Cross-Domain Time Series Forecasting | 2023 | |
+SegRNN: Segment Recurrent Neural Network for Long-Term Time Series Forecasting | 2023 | |
+WinNet: Make Only One Convolutional Layer Effective for Time Series Forecasting | 2023 | |
+RLinear: Revisiting Long-term Time Series Forecasting: An Investigation on Linear Mapping | 2023 | |
+TSMixer: Lightweight MLP-Mixer Model for Multivariate Time Series Forecasting | 2023 | |
+FITS: Modeling Time Series with Parameters | 2023 | |
+MoLE-RLinear: Mixture-of-Linear-Experts for Long-term Time Series Forecasting | 2023 | |
+TiDE: Long-term Forecasting with TiDE: Time-series Dense Encoder | 2023 | |
+Basisformer: Attention-based Time Series Forecasting with Learnable and Interpretable Basis | 2023 | |
+Time-LLM: Time Series Forecasting by Reprogramming Large Language Models | 2023 | |
+SRCNet: A New Deep Learning Architecture with Inductive Bias Balance for Transformer Oil Temperature Forecasting | 2023 | |
+PatchTST/64: A Time Series is Worth 64 Words: Long-term Forecasting with Transformers | 2022 | |
+Parallel Series Transformer: How Features Benefit: Parallel Series Embedding for Multivariate Time Series Forecasting with Transformer | 2022 | |
+NLinear: Are Transformers Effective for Time Series Forecasting? | 2022 | |
+FiLM: Frequency improved Legendre Memory Model for Long-term Time Series Forecasting | 2022 | |
+N-HiTS (Neural Hierarchical Interpolation for Time Series) | 2022 | |
+FEDformer (Frequency Enhanced Decomposed Transformer) | 2022 | |
+ETSformer | 2022 | |
+DLinear (Decomposition Linear) | 2022 | |
+SCINet: Time Series Modeling and Forecasting with Sample Convolution and Interaction | 2021 | |
+LLaTA: Taming Pre-trained Language Models with N-gram Representations for Low-Resource Domain Adaptation | 2021 | |
+Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting | 2021 | |
+Transformer: Long-term series forecasting with Query Selector -- efficient model of sparse attention | 2021 | |
+QuerySelector: Long-term series forecasting with Query Selector -- efficient model of sparse attention | 2021 | |
+STGCN-Cov: Conditional Temporal Neural Processes with Covariance Loss | 2021 | |
+Deep Renewal Processes | 2021 | |
+Informer: | 2021 | |
+Pyraformer: | 2021  | |
+TSE-SC: Traffic transformer: Capturing the continuity and periodicity of time series for traffic forecasting | 2020 | |
+DeepAR | 2020 | |
+SimpleFeedForward | 2020 | |
+Temporal Fusion Transformer (TFT) | 2020 | |
+ForecastNet: A Time-Variant Deep Feed-Forward Neural Network Architecture for Multi-Step-Ahead Time-Series Forecasting | 2020 | |
 TST (Time Series Transformer) | 2020 | |
-DeepFactor | 01 Jan 2019 | |
-N-BEATS | 01 Jan 2019 | |
-Graph WaveNet | 01 Jan 2019 | |
+DeepFactor | 2019 | |
+N-BEATS | 2019 | |
+Graph WaveNet | 2019 | |
+GA-LSTM: Genetic Algorithm-Optimized Long Short-Term Memory Network for Stock Market Prediction | 2018 | |
+Temporal Convolutional Networks (TCN) | 2018 | |
+DeepState | 2018 | |
+LSTNet (Long- and Short-term Time-series Network) | 2018 | |
+MTNet (Memory Time-series Network) | 2018  | |
+STGCN (Cheb): Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting | 2017 | |
+UberNN: Deep and Confident Prediction for Time Series at Uber | 2017 | |
+FC-LSTM: Sequence to Sequence Learning with Neural Networks | 2014 | |
+Bayesian Structural Time Series (BSTS) | 2014 | |
+TBATS: Forecasting Time Series With Complex Seasonal Patterns Using Exponential Smoothing | 2011 | |
+ADIDA (Aggregate-Disaggregate Intermittent Demand Approach) | 2011 | |
+TSB (Teunter-Syntetos-Babai) | 2011 | |
+Time Series Prediction Using Support Vector Machines: A Survey | 2009 | |
+Croston Optimized | 2005 | |
+Croston SBA | 2005 | |
+Support Vector Machine With Adaptive Parameters in Financial Time Series Forecasting | 2003 | |
+Exponential Smoothing (ETS) | 2002 | |
+Optimized Theta Model | 2000 | |
+Standard Theta Model | 2000 | |
+Dynamic Linear Models (DLM) | 1997 | |
+Vector Error Correction Model (VECM) | 1991 | |
+Seasonal Decomposition of Time Series (STL) | 1990 | |
+Croston Classic | 1972 | |
+Auto-Regressive Integrated Moving Average | 1970 | |
+ARIMA (AutoRegressive Integrated Moving Average) | 1970 | |
+SARIMA (Seasonal ARIMA) | 1970 | |
+Kalman Filter | 1960 | |
+Holt-Winters Exponential Smoothing | 1957 | |
 
-GA-LSTM: Genetic Algorithm-Optimized Long Short-Term Memory Network for Stock Market Prediction | 01 Jan 2018 | |
-Temporal Convolutional Networks (TCN) | 01 Jan 2018 | |
-DeepState | 01 Jan 2018 | |
-LSTNet (Long- and Short-term Time-series Network) | 01 Jan 2018 | |
-MTNet (Memory Time-series Network) | 01 Jan 2018  | |
-STGCN (Cheb): Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting | 01 Jan 2017 | |
-STGCN (1st): Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting | 01 Jan 2017 | |
-UberNN: Deep and Confident Prediction for Time Series at Uber | 01 Jan 2017 | |
-FC-LSTM: Sequence to Sequence Learning with Neural Networks | 01 Jan 2014 | |
-Bayesian Structural Time Series (BSTS) | 01 Jan 2014 | |
-TBATS: Forecasting Time Series With Complex Seasonal Patterns Using Exponential Smoothing | 01 Jan 2011 | |
-ADIDA (Aggregate-Disaggregate Intermittent Demand Approach) | 01 Jan 2011 | |
-TSB (Teunter-Syntetos-Babai) | 01 Jan 2011 | |
-Time Series Prediction Using Support Vector Machines: A Survey | 01 Jan 2009 | |
-Croston Optimized | 01 Jan 2005 | |
-Croston SBA | 01 Jan 2005 | |
-Support Vector Machine With Adaptive Parameters in Financial Time Series Forecasting | 01 Jan 2003 | |
-Exponential Smoothing (ETS) | 01 Jan 2002 | |
-Optimized Theta Model | 01 Jan 2000 | |
 
-Standard Theta Model | 01 Jan 2000 | |
-Dynamic Linear Models (DLM) | 01 Jan 1997 | |
-Vector Error Correction Model (VECM) | 01 Jan 1991 | |
-Seasonal Decomposition of Time Series (STL) | 01 Jan 1990 | |
-Croston Classic | 01 Jan 1972 | |
-Auto-Regressive Integrated Moving Average | 01 Jan 1970 | |
-ARIMA (AutoRegressive Integrated Moving Average) | 01 Jan 1970 | |
-SARIMA (Seasonal ARIMA) | 01 Jan 1970 | |
-Kalman Filter | 01 Jan 1960 | |
-Holt-Winters Exponential Smoothing | 01 Jan 1957 | |
+
+
