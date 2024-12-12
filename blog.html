@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <footer>
+    <header>
         <h1>TSF Models</h1>
         <div class="nav-buttons">
             <a href="blog.html">Blogs</a>
@@ -13,14 +12,15 @@
             <a href="index.html">Soon!</a> <!-- Competitions -->
             <a href="index.html">Soon!</a> <!-- Courses -->
         </div>
-    </footer>
+    </header>
     <style>
-        footer {
+        header {
             background-color: transparent;
             color: #fff;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 20px;
             flex-wrap: nowrap;
             padding: 40px;
             transform: scale(0.7);
@@ -28,7 +28,7 @@
             margin-inline-end: -200px;
             
         }
-        footer h1 {
+        header h1 {
             flex: 1;
             margin: 0;
             font-size: 2rem;
@@ -46,182 +46,183 @@
             border-radius: 4px;
             background-color: rgba(255, 255, 255, 0.1);
         }
-        .close-button {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            background-color: #962e2e98;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 80px;
-            height: 40px;
-            display: none;
-        }
-        .blog-post.expanded .close-button {
-            display: block;
-        }
     </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Series Forecasting Models</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
             margin: 0;
             padding: 0;
-            background-color: #2c003e;
-            color: #e0e0e0;
+            background-color: #262626;
+            background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
-        header {
-            background-color: #4b0082;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+            
         }
         .container {
             width: 90%;
-            margin: 20px auto;
-            overflow: hidden;
-            margin-inline-start: 50px;
+            margin: 2rem auto;
+            background-color: transparent;
+            padding: 1rem;
+            border-radius: 8px;
         }
-        .blog-post {
-            background: #3e0066;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: max-height 0s ease-out, padding 0 ease-out;
-            max-height: 75px;
-            overflow: hidden;
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .metadata {
+            color: #ddd;
+        }
+        .search-bar {
+            background-color: transparent;
+            color: white;
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        table {
+            color:#ddd;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            background-color: rgba(255, 255, 255, 0.141); 
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        } 
+        th, td {
+            padding: 1rem;
+            text-align: left;
             cursor: pointer;
+            background-color: transparent;
+        }
+        th {
+            background-color: rgba(221, 212, 212, 0);
+            color: #fff;
             position: relative;
         }
-        .blog-post h1 {
-            font-size: x-large;
-            padding-bottom: 30px;
-            color: #ffffff;
+        .sort-arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            vertical-align: middle;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
         }
-        .blog-post h2 {
-            color: #ffccff;
+        .sort-asc .sort-arrow {
+            border-bottom: 5px solid green;
         }
-        .blog-post h3 {
-            color: #ffffff;
+        .sort-desc .sort-arrow {
+            border-top: 5px solid green;
         }
-        .blog-post h4 {
-            color: #ffffff;
+        tbody tr:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.249);
         }
-        .blog-post p {
-            line-height: 1.8;
+        tbody tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.159);
         }
-        .blog-post img {
-            max-width: 100%;
-            border-radius: 10px;
+        a {
+            color: white;
+            text-decoration: none;
         }
-        .blog-post.expanded {
-            max-height: 12000px;
-            padding: 20px;
-        }
+        
     </style>
 </head>
 <body>
-    <div class="container"></div>
-    <script>
-        async function loadBlogPosts() {
-            const response = await fetch('./blogs');
+    <div class="container">
+        <div class="top-bar">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search models...">
+            <div class="metadata" id="metadata">
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th onclick="sortTable(1)">Date <span class="sort-arrow"></span></th>
+                    <th>GitHub</th>
+                </tr>
+            </thead>
+            <tbody id="models-table-body">
+            </tbody>
+        </table>
+        <script>
+            fetch('models.txt')
+            .then(response => response.text())
+            .then(data => {
+                const models = data.split('\n');
+                const tableBody = document.getElementById('models-table-body');
+                const metadata = document.getElementById('metadata');
+                let modelCount = 0;
 
-            if (!response.ok) {
-                console.error('Failed to fetch blog posts:', response.statusText);
-                return;
-            }
+                models.forEach((model, index) => {
+                    if (model.trim()) {
+                        modelCount++;
+                        const [title, date, paperLink, githubLink] = model.split('|');
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td><a href="${paperLink}" target="_blank" title="${title}">${title}</a></td>
+                            <td>${date}</td>
+                            <td><a href="${githubLink}" target="_blank">Link</a></td>
+                        `;
+                        tableBody.appendChild(row);
+                    }
+                });
 
-            const text = await response.text();
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(text, 'text/html');
-            const files = Array.from(doc.querySelectorAll('a'))
-                .map(link => link.getAttribute('href'))
-                .filter(file => file.endsWith('.txt'))
-                .sort((a, b) => a.localeCompare(b));
-            const container = document.querySelector('.container');
+                metadata.innerText = `Total Models: ${modelCount}`;
+            })
+            .catch(error => console.error('Error fetching models:', error));
 
-            if (files.length === 0) {
-                console.warn('No blog posts found.');
-                return;
-            }
+            function sortTable(columnIndex) {
+                const table = document.querySelector('table tbody');
+                const rows = Array.from(table.rows);
+                const isAscending = table.getAttribute('data-sort-order') === 'asc';
+                const direction = isAscending ? 1 : -1;
 
-            console.log(files);
-            
-            files.forEach(async (file) => {
-                const postResponse = await fetch(`${file.trim()}`);
-                const text = await postResponse.text();
-                const postDiv = document.createElement('div');
-                postDiv.classList.add('blog-post');
+                rows.sort((a, b) => {
+                    const aText = a.cells[columnIndex].innerText;
+                    const bText = b.cells[columnIndex].innerText;
 
-                const fileName = file.trim().split('/').pop().replace('.txt', '');
-                const formattedTitle = fileName.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-                const formattedTitle2 = formattedTitle.toUpperCase();
-                const title = document.createElement('h1');
-                
-                title.textContent = formattedTitle2;
-                postDiv.appendChild(title);
-
-                const closeButton = document.createElement('button');
-                closeButton.classList.add('close-button');
-                closeButton.textContent = 'close';
-                postDiv.appendChild(closeButton);
-
-                const lines = text.split('\n');
-                lines.forEach(line => {
-                    if (line.startsWith('# ')) {
-                        const h2 = document.createElement('h2');
-                        h2.textContent = line.substring(1);
-                        postDiv.appendChild(h2);
-                    } else if (line.startsWith('## ')) {
-                        const h3 = document.createElement('h3');
-                        h3.textContent = line.substring(2);
-                        postDiv.appendChild(h3);
-                    } else if (line.startsWith('### ')) {
-                        const h4 = document.createElement('h4');
-                        h4.textContent = line.substring(3);
-                        postDiv.appendChild(h4);
-
-                    } else if (line.startsWith('[#]') ) {
-                        const imageUrl = line.substring(3).trim();
-                        const img = document.createElement('img');
-                        img.src = imageUrl;
-                        img.alt = 'Image';
-                        postDiv.appendChild(img);
+                    if (columnIndex === 1) {
+                        const aDate = new Date(aText);
+                        const bDate = new Date(bText);
+                        return (aDate - bDate) * direction;
                     } else {
-                        const p = document.createElement('p');
-                        p.textContent = line;
-                        postDiv.appendChild(p);
+                        return aText.localeCompare(bText) * direction;
                     }
                 });
 
-                postDiv.addEventListener('click', () => {
-                    postDiv.classList.add('expanded');
-                });
+                table.innerHTML = '';
+                rows.forEach(row => table.appendChild(row));
+                table.setAttribute('data-sort-order', isAscending ? 'desc' : 'asc');
 
-                closeButton.addEventListener('click', (event) => {
-                    event.stopPropagation();
-                    postDiv.classList.remove('expanded');
+                document.querySelectorAll('th .sort-arrow').forEach(arrow => {
+                    arrow.parentElement.classList.remove('sort-asc', 'sort-desc');
                 });
+                const header = document.querySelector(`th:nth-child(${columnIndex + 1})`);
+                header.classList.add(isAscending ? 'sort-desc' : 'sort-asc');
+            }
 
-                document.addEventListener('keydown', (event) => {
-                    if (event.key === 'Escape' && postDiv.classList.contains('expanded')) {
-                        postDiv.classList.remove('expanded');
+            document.getElementById('search-bar').addEventListener('input', function() {
+                const filter = this.value.toLowerCase();
+                const rows = document.querySelectorAll('#models-table-body tr');
+                rows.forEach(row => {
+                    const title = row.cells[0].innerText.toLowerCase();
+                    if (title.includes(filter)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
                     }
                 });
-
-                container.appendChild(postDiv);
             });
-        }
-
-        document.addEventListener('DOMContentLoaded', loadBlogPosts);
-    </script>
+        </script>
+    </div>
 </body>
 </html>
