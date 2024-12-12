@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Series Forecasting Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 80%;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWJjc3N4b3gxaGY1bXgyNXZ3NDJsaWJsY3JpZ29wMHl3ZWZ3MW9tdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9bTjZrytydVRK/giphy.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: transparent;
+            color: #fff;
+            padding: 1rem 0;
+            
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+            background-color: transparent;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        table {
+            color:#ddd;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            background-color: transparent; /* Make table background transparent */
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        th {
+            background-color: transparent;
+            color: #fff;
+            position: relative;
+        }
+        .sort-arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            vertical-align: middle;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        .sort-asc .sort-arrow {
+            border-bottom: 5px solid green;
+        }
+        .sort-desc .sort-arrow {
+            border-top: 5px solid green;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: transparent;
+        }
+        tbody tr:nth-child(even) {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Time Series Forecasting Models</h1>
+    </header>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th onclick="sortTable(1)">Date <span class="sort-arrow"></span></th>
+                    <th>Paper</th>
+                    <th>GitHub</th>
+                </tr>
+            </thead>
+            <tbody id="models-table-body">
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+        <script>
+            fetch('models.txt')
+            .then(response => response.text())
+            .then(data => {
+                const models = data.split('\n');
+                const tableBody = document.getElementById('models-table-body');
+                models.forEach((model, index) => {
+                    if (model.trim()) {
+                        const [title, date, paperLink, githubLink] = model.split('|');
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${title}</td>
+                            <td>${date}</td>
+                            <td><a href="${paperLink}" target="_blank">Link</a></td>
+                            <td><a href="${githubLink}" target="_blank">Link</a></td>
+                        `;
+                        tableBody.appendChild(row);
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching models:', error));
+
+            function sortTable(columnIndex) {
+                const table = document.querySelector('table tbody');
+                const rows = Array.from(table.rows);
+                const isAscending = table.getAttribute('data-sort-order') === 'asc';
+                const direction = isAscending ? 1 : -1;
+
+                rows.sort((a, b) => {
+                    const aText = a.cells[columnIndex].innerText;
+                    const bText = b.cells[columnIndex].innerText;
+
+                    if (columnIndex === 1) { // Date column
+                        const aDate = new Date(aText);
+                        const bDate = new Date(bText);
+                        return (aDate - bDate) * direction;
+                    } else {
+                        return aText.localeCompare(bText) * direction;
+                    }
+                });
+
+                table.innerHTML = '';
+                rows.forEach(row => table.appendChild(row));
+                table.setAttribute('data-sort-order', isAscending ? 'desc' : 'asc');
+
+                // Update sort arrows
+                document.querySelectorAll('th .sort-arrow').forEach(arrow => {
+                    arrow.parentElement.classList.remove('sort-asc', 'sort-desc');
+                });
+                const header = document.querySelector(`th:nth-child(${columnIndex + 1})`);
+                header.classList.add(isAscending ? 'sort-desc' : 'sort-asc');
+            }
+        </script>
+    </div>
+</body>
+</html>
