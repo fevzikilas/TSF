@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <footer>
+        <h1>TSF Models</h1>
+        <div class="nav-buttons">
+            <a href="blog.html">Blogs</a>
+            <a href="index.html">Soon!</a> <!-- Papers -->
+            <a href="index.html">Soon!</a> <!-- Tutorials -->
+            <a href="index.html">Soon!</a> <!-- Repositories -->
+            <a href="index.html">Soon!</a> <!-- Books -->
+            <a href="index.html">Soon!</a> <!-- Datasets -->
+            <a href="index.html">Soon!</a> <!-- Competitions -->
+            <a href="index.html">Soon!</a> <!-- Courses -->
+        </div>
+    </footer>
+    <style>
+        footer {
+            background-color: transparent;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 40px;
+            transform: scale(0.7);
+            margin-inline-start: -200px;
+            margin-inline-end: -200px;
+            
+        }
+        footer h1 {
+            flex: 1;
+            margin: 0;
+            font-size: 2rem;
+        }
+        .nav-buttons {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .nav-buttons a {
+            margin-left: 1rem;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .close-button {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: #962e2e98;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 80px;
+            height: 40px;
+            display: none;
+        }
+        .blog-post.expanded .close-button {
+            display: block;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c003e;
+            color: #e0e0e0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #4b0082;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+            margin-inline-start: 50px;
+        }
+        .blog-post {
+            background: #3e0066;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: max-height 0s ease-out, padding 0 ease-out;
+            max-height: 75px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+        .blog-post h1 {
+            font-size: x-large;
+            padding-bottom: 30px;
+            color: #ffffff;
+        }
+        .blog-post h2 {
+            color: #ffccff;
+        }
+        .blog-post h3 {
+            color: #ffffff;
+        }
+        .blog-post h4 {
+            color: #ffffff;
+        }
+        .blog-post p {
+            line-height: 1.8;
+        }
+        .blog-post img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .blog-post.expanded {
+            max-height: 12000px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        async function loadBlogPosts() {
+            const response = await fetch('./blogs/');
+
+            if (!response.ok) {
+                console.error('Failed to fetch blog posts:', response.statusText);
+                return;
+            }
+
+            const text = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(text, 'text/html');
+            const files = Array.from(doc.querySelectorAll('a'))
+                .map(link => link.getAttribute('href'))
+                .filter(file => file.endsWith('.txt'))
+                .sort((a, b) => a.localeCompare(b));
+            const container = document.querySelector('.container');
+
+            if (files.length === 0) {
+                console.warn('No blog posts found.');
+                return;
+            }
+
+            console.log(files);
+            
+            files.forEach(async (file) => {
+                const postResponse = await fetch(`${file.trim()}`);
+                const text = await postResponse.text();
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('blog-post');
+
+                const fileName = file.trim().split('/').pop().replace('.txt', '');
+                const formattedTitle = fileName.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                const formattedTitle2 = formattedTitle.toUpperCase();
+                const title = document.createElement('h1');
+                
+                title.textContent = formattedTitle2;
+                postDiv.appendChild(title);
+
+                const closeButton = document.createElement('button');
+                closeButton.classList.add('close-button');
+                closeButton.textContent = 'close';
+                postDiv.appendChild(closeButton);
+
+                const lines = text.split('\n');
+                lines.forEach(line => {
+                    if (line.startsWith('# ')) {
+                        const h2 = document.createElement('h2');
+                        h2.textContent = line.substring(1);
+                        postDiv.appendChild(h2);
+                    } else if (line.startsWith('## ')) {
+                        const h3 = document.createElement('h3');
+                        h3.textContent = line.substring(2);
+                        postDiv.appendChild(h3);
+                    } else if (line.startsWith('### ')) {
+                        const h4 = document.createElement('h4');
+                        h4.textContent = line.substring(3);
+                        postDiv.appendChild(h4);
+
+                    } else if (line.startsWith('[#]') ) {
+                        const imageUrl = line.substring(3).trim();
+                        const img = document.createElement('img');
+                        img.src = imageUrl;
+                        img.alt = 'Image';
+                        postDiv.appendChild(img);
+                    } else {
+                        const p = document.createElement('p');
+                        p.textContent = line;
+                        postDiv.appendChild(p);
+                    }
+                });
+
+                postDiv.addEventListener('click', () => {
+                    postDiv.classList.add('expanded');
+                });
+
+                closeButton.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    postDiv.classList.remove('expanded');
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape' && postDiv.classList.contains('expanded')) {
+                        postDiv.classList.remove('expanded');
+                    }
+                });
+
+                container.appendChild(postDiv);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadBlogPosts);
+    </script>
+</body>
+</html>
